@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+a, a:visited{
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.be-red{
+    background-color: #cc2949;
+}
+
+.white{
+    color:white;
+}
+
+.large-padding{
+    padding: 0.5rem 0.25rem;
+}
+
+.no-list{
+    list-style-type:none;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+#logo{
+    font-size: 1.5rem;
+    border: 1px solid white;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
