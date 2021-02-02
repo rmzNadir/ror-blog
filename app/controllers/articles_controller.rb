@@ -23,4 +23,15 @@ class ArticlesController < ApplicationController
       render :new
     end
   end
+
+  def update
+    # actualizar articulos
+  end
+
+  # Destroy elimina el objeto de la base de datos
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to articles_path
+  end
 end
