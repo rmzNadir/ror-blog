@@ -29,6 +29,17 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  # PUT /articles/:id
+
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      redirect_to @article
+    else
+      render :edit
+    end
+  end
+
   # Destroy elimina el objeto de la base de datos
   def destroy
     @article = Article.find(params[:id])

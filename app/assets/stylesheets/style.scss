@@ -6,12 +6,16 @@ html,body{
 }
 
 a, a:visited{
-    color: inherit !important;
+    color: inherit;
     text-decoration: none;
 }
 
 .be-red{
     background-color: #cc2949;
+}
+
+.text-red{
+    color: #cc2949 !important;
 }
 
 .white{
@@ -85,3 +89,6 @@ a, a:visited{
     text-align: center;
 }
 
+.edit-article{
+    padding-top: 1rem;
+}
