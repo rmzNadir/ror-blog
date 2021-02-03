@@ -24,8 +24,9 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def update
-    # actualizar articulos
+  # GET /articles/:id/edit
+  def edit
+    @article = Article.find(params[:id])
   end
 
   # Destroy elimina el objeto de la base de datos
